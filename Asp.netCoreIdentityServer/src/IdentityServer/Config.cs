@@ -55,11 +55,12 @@ namespace IdentityServer
 
             // where to redirect to after logout
             PostLogoutRedirectUris = { "https://localhost:3001/signout-callback-oidc" },
-
+             AllowOfflineAccess = true,
             AllowedScopes = new List<string>
             {
               IdentityServerConstants.StandardScopes.OpenId,
-                IdentityServerConstants.StandardScopes.Profile
+                IdentityServerConstants.StandardScopes.Profile,
+                "emrapi"
             }
         } 
         };
