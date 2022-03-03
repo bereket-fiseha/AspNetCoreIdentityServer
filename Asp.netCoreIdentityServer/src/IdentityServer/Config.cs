@@ -17,10 +17,26 @@ namespace IdentityServer
 
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
-            { };
+            {         new ApiScope("emrapi", "EMR API")
+  };
 
         public static IEnumerable<Client> Clients =>
             new Client[] 
-            { };
+            {        new Client
+        {
+            ClientId = "ro.emr",
+
+            // no interactive user, use the clientid/secret for authentication
+            AllowedGrantTypes = GrantTypes.ClientCredentials,
+
+            // secret for authentication
+            ClientSecrets =
+            {
+                new Secret("emrsecret".Sha256())
+            },
+
+            // scopes that client has access to
+            AllowedScopes = { "emrapi" }
+        }};
     }
 }
