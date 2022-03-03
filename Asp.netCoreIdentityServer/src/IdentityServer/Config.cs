@@ -4,7 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
-
+using IdentityServer4;
 namespace IdentityServer
 {
     public static class Config
@@ -12,7 +12,8 @@ namespace IdentityServer
         public static IEnumerable<IdentityResource> IdentityResources =>
             new IdentityResource[]
             { 
-                new IdentityResources.OpenId()
+                new IdentityResources.OpenId(),
+                  new IdentityResources.Profile(),
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
@@ -21,6 +22,8 @@ namespace IdentityServer
   };
 
         public static IEnumerable<Client> Clients =>
+
+        //Asp.net core emr Api
             new Client[] 
             {        new Client
         {
@@ -37,6 +40,28 @@ namespace IdentityServer
 
             // scopes that client has access to
             AllowedScopes = { "emrapi" }
-        }};
+        },
+          // interactive EMR MVC client
+        new Client
+        {
+            ClientId = "ro.emrmvc",
+            ClientSecrets = { new Secret("emrsecret".Sha256()) },
+
+            AllowedGrantTypes = GrantTypes.Code,
+
+            // where to redirect to after login
+            //emr client running at 3001
+            RedirectUris = { "https://localhost:3001/signin-oidc" },
+
+            // where to redirect to after logout
+            PostLogoutRedirectUris = { "https://localhost:3001/signout-callback-oidc" },
+
+            AllowedScopes = new List<string>
+            {
+              IdentityServerConstants.StandardScopes.OpenId,
+                IdentityServerConstants.StandardScopes.Profile
+            }
+        } 
+        };
     }
 }
