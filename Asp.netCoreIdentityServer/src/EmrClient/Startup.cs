@@ -35,7 +35,9 @@ services.AddAuthentication(options =>
     .AddCookie("Cookies")
     .AddOpenIdConnect("oidc", options =>
     {
-        options.Authority = "https://localhost:5001";
+      //  options.Authority = "https://localhost:5001";
+
+        options.Authority = "https://localhost:5005";
 
         options.ClientId = "ro.emrmvc";
         options.ClientSecret = "emrsecret";

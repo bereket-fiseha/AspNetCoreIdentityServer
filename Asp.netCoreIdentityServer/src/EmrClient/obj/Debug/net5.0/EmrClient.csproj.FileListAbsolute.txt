@@ -16,7 +16,6 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\bin\Debug\net5
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.csproj.AssemblyReference.cache
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.AssemblyInfoInputs.cache
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.AssemblyInfo.cs
@@ -45,3 +44,4 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\ref\EmrClient.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.pdb
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.genruntimeconfig.cache
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\EmrClient\obj\Debug\net5.0\EmrClient.csproj.AssemblyReference.cache
