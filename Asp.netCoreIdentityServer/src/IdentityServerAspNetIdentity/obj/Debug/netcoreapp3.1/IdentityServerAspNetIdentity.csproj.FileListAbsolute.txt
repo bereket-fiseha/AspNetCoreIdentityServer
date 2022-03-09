@@ -51,7 +51,10 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIden
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\MySqlConnector.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Pomelo.JsonObject.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Serilog.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
@@ -81,6 +84,7 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIden
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.csproj.AssemblyReference.cache
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.AssemblyInfoInputs.cache
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.AssemblyInfo.cs
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.csproj.CoreCompileInputs.cache
@@ -120,4 +124,3 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIden
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.pdb
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.genruntimeconfig.cache
-C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\IdentityServerAspNetIdentity.csproj.AssemblyReference.cache

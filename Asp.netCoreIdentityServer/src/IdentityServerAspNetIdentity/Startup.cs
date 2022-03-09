@@ -31,7 +31,14 @@ namespace IdentityServerAspNetIdentity
             services.AddControllersWithViews();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+               // options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
+    
+options.UseMySql(Configuration.GetConnectionString("MysqlDbConnection"))
+                
+                
+                );
+
+
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()

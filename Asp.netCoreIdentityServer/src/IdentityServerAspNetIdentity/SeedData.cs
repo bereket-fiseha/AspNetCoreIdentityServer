@@ -22,8 +22,10 @@ namespace IdentityServerAspNetIdentity
             var services = new ServiceCollection();
             services.AddLogging();
             services.AddDbContext<ApplicationDbContext>(options =>
-               options.UseSqlite(connectionString));
-
+              // options.UseSqlite(connectionString)
+               options.UseMySql(connectionString)
+               );
+    
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
@@ -40,7 +42,7 @@ namespace IdentityServerAspNetIdentity
                     if (alice == null)
                     {
                         alice = new ApplicationUser
-                        {
+                        {   Id=null,
                             UserName = "alice",
                             Email = "AliceSmith@email.com",
                             EmailConfirmed = true,
@@ -99,6 +101,39 @@ namespace IdentityServerAspNetIdentity
                     else
                     {
                         Log.Debug("bob already exists");
+                    }
+                    
+                    var beki = userMgr.FindByNameAsync("beki").Result;
+                    if (beki == null)
+                    {
+                        beki = new ApplicationUser
+                        {
+                            UserName = "beki",
+                            Email = "beki@email.com",
+                            EmailConfirmed = true
+                        };
+                        var result = userMgr.CreateAsync(beki, "Pass123$").Result;
+                        if (!result.Succeeded)
+                        {
+                            throw new Exception(result.Errors.First().Description);
+                        }
+
+                        result = userMgr.AddClaimsAsync(bob, new Claim[]{
+                            new Claim(JwtClaimTypes.Name, "beki Smith"),
+                            new Claim(JwtClaimTypes.GivenName, "beki"),
+                            new Claim(JwtClaimTypes.FamilyName, "Smith"),
+                            new Claim(JwtClaimTypes.WebSite, "http://beki.com"),
+                            new Claim("location", "somewhere")
+                        }).Result;
+                        if (!result.Succeeded)
+                        {
+                            throw new Exception(result.Errors.First().Description);
+                        }
+                        Log.Debug("beki created");
+                    }
+                    else
+                    {
+                        Log.Debug("beki already exists");
                     }
                 }
             }
