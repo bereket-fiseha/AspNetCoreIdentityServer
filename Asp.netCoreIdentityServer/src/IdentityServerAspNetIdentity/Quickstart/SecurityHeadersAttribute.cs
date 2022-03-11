@@ -36,7 +36,7 @@ namespace IdentityServerHost.Quickstart.UI
                 // once for standards compliant browsers
                 if (!context.HttpContext.Response.Headers.ContainsKey("Content-Security-Policy"))
                 {
-                    context.HttpContext.Response.Headers.Add("Content-Security-Policy", csp);
+                 //   context.HttpContext.Response.Headers.Add("Content-Security-Policy", csp);
                 }
                 // and once again for IE
                 if (!context.HttpContext.Response.Headers.ContainsKey("X-Content-Security-Policy"))

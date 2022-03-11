@@ -156,3 +156,4 @@ C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIden
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Windows.Extensions.dll
+C:\Files\Edu\OAuth OpenId\Asp.netCoreIdentityServer\src\IdentityServerAspNetIdentity\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login_initial.cshtml.g.cs

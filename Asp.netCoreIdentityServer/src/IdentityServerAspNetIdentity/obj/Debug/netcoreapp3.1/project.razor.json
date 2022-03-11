@@ -14442,6 +14442,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Files\\Edu\\OAuth OpenId\\Asp.netCoreIdentityServer\\src\\IdentityServerAspNetIdentity\\Views\\Account\\Login_initial.cshtml",
+      "TargetPath": "Views\\Account\\Login_initial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Files\\Edu\\OAuth OpenId\\Asp.netCoreIdentityServer\\src\\IdentityServerAspNetIdentity\\Views\\Diagnostics\\Index.cshtml",
       "TargetPath": "Views\\Diagnostics\\Index.cshtml",
       "FileKind": "mvc"

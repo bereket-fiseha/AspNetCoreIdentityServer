@@ -1,0 +1,52 @@
+﻿
+html, body {
+    background-color: #144c49 !important;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+    color: white;
+}
+
+
+.login-input > input {
+    width: 90%;
+    border-radius: 6px;
+    border-bottom: 1px solid #1890ff;
+    padding: 5px 10px;
+    outline: none;
+}
+
+
+
+
+
+.remember {
+    color: white;
+}
+
+    .remember input {
+        width: 20px;
+        height: 20px;
+        margin-left: 15px;
+        margin-right: 5px;
+    }
+
+.login_btn {
+    height: 50px;
+    border: solid 1px #fff;
+    color: #fff;
+    background-color: #144c49;
+    width: 110px;
+}
+
+    .login_btn:hover {
+        color: black;
+        background-color: white;
+    }
+
+.links {
+    color: white;
+}
+
+    .links a {
+        margin-left: 4px;
+    }
