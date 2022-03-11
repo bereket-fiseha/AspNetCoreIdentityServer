@@ -3,8 +3,10 @@
 
 
 using IdentityServer4;
+using IdentityServer4.Services;
 using IdentityServerAspNetIdentity.Data;
 using IdentityServerAspNetIdentity.Models;
+using IdentityServerAspNetIdentity.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -32,11 +34,13 @@ namespace IdentityServerAspNetIdentity
 
             services.AddDbContext<ApplicationDbContext>(options =>
                // options.UseSqlite(Configuration.GetConnectionString("DefaultConnection"))
-    
-options.UseMySql(Configuration.GetConnectionString("MysqlDbConnection"))
+     
+    //options.UseMySql(Configuration.GetConnectionString("MysqlDbConnection"))
+    options.UseOracle(Configuration.GetConnectionString("OracleTestDBConnection")).UseQueryTrackingBehavior(QueryTrackingBehavior.NoTracking)
                 
                 
                 );
+
 
 
 
@@ -58,6 +62,7 @@ options.UseMySql(Configuration.GetConnectionString("MysqlDbConnection"))
                 .AddInMemoryApiScopes(Config.ApiScopes)
                 .AddInMemoryClients(Config.Clients)
                 .AddAspNetIdentity<ApplicationUser>();
+            services.AddScoped<IProfileService, ProfileService>();
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();

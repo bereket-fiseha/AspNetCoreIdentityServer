@@ -37,6 +37,26 @@ namespace IdentityServerAspNetIdentity
                     var context = scope.ServiceProvider.GetService<ApplicationDbContext>();
                     context.Database.Migrate();
 
+                    var roleMgr = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+                    var member = roleMgr.FindByNameAsync("member").Result;
+                    if (member == null)
+                    {
+                        member = new IdentityRole
+                        {
+                            Name = "member"
+                        };
+                        _ = roleMgr.CreateAsync(member).Result;
+                    }
+
+                    var admin = roleMgr.FindByNameAsync("admin").Result;
+                    if (admin == null)
+                    {
+                        admin = new IdentityRole
+                        {
+                            Name = "admin"
+                        };
+                        _ = roleMgr.CreateAsync(admin).Result;
+                    }
                     var userMgr = scope.ServiceProvider.GetRequiredService<UserManager<ApplicationUser>>();
                     var alice = userMgr.FindByNameAsync("alice").Result;
                     if (alice == null)
@@ -135,6 +155,16 @@ namespace IdentityServerAspNetIdentity
                     {
                         Log.Debug("beki already exists");
                     }
+                    if (!userMgr.IsInRoleAsync(beki, admin.Name).Result)
+                    {
+                        _ = userMgr.AddToRoleAsync(beki, admin.Name).Result;
+                    }
+                    if (!userMgr.IsInRoleAsync(bob, member.Name).Result)
+                    {
+                        _ = userMgr.AddToRoleAsync(bob, member.Name).Result;
+                    }
+
+
                 }
             }
         }
